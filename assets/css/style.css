@@ -147,6 +147,7 @@ a:hover { color: var(--clr-accent); }
     opacity: 0.15;
 }
 
+/* Blurred blob shapes */
 .shape-1 {
     width: 500px;
     height: 500px;
@@ -174,9 +175,103 @@ a:hover { color: var(--clr-accent); }
     animation: float 6s ease-in-out infinite 2s;
 }
 
+/* Ring shapes — border-only circles */
+.shape-ring {
+    background: none !important;
+    filter: blur(0px);
+    opacity: 0.08;
+}
+
+.shape-4 {
+    width: 320px;
+    height: 320px;
+    border: 2px solid var(--clr-accent);
+    top: 15%;
+    right: 8%;
+    animation: rotate-slow 25s linear infinite, drift 12s ease-in-out infinite;
+}
+
+.shape-5 {
+    width: 180px;
+    height: 180px;
+    border: 1.5px solid var(--clr-accent-light);
+    bottom: 18%;
+    left: 12%;
+    animation: rotate-slow 18s linear infinite reverse, drift 15s ease-in-out infinite 3s;
+}
+
+/* Small dot shapes — tiny pulsing particles */
+.shape-dot {
+    filter: blur(0px);
+    background: var(--clr-accent) !important;
+    opacity: 0.25;
+}
+
+.shape-6 {
+    width: 8px;
+    height: 8px;
+    top: 25%;
+    left: 20%;
+    animation: pulse-dot 4s ease-in-out infinite, drift 10s ease-in-out infinite;
+}
+
+.shape-7 {
+    width: 6px;
+    height: 6px;
+    top: 60%;
+    right: 15%;
+    animation: pulse-dot 5s ease-in-out infinite 1s, drift 14s ease-in-out infinite reverse;
+}
+
+.shape-8 {
+    width: 10px;
+    height: 10px;
+    bottom: 30%;
+    left: 45%;
+    animation: pulse-dot 3.5s ease-in-out infinite 2s, drift 11s ease-in-out infinite 1s;
+}
+
+/* Additional soft blobs */
+.shape-9 {
+    width: 280px;
+    height: 280px;
+    background: var(--clr-bordeaux);
+    top: 10%;
+    left: -5%;
+    opacity: 0.1;
+    animation: float 12s ease-in-out infinite 4s;
+}
+
+.shape-10 {
+    width: 160px;
+    height: 160px;
+    background: var(--clr-accent);
+    bottom: 10%;
+    right: 20%;
+    opacity: 0.08;
+    animation: float 9s ease-in-out infinite 1s;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0) scale(1); }
     50% { transform: translateY(-30px) scale(1.05); }
+}
+
+@keyframes drift {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(15px, -10px); }
+    50% { transform: translate(-10px, 15px); }
+    75% { transform: translate(10px, 5px); }
+}
+
+@keyframes rotate-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.8); }
 }
 
 .hero-greeting {
@@ -265,11 +360,10 @@ a:hover { color: var(--clr-accent); }
 }
 
 .social-link:hover {
-    background: var(--clr-accent);
+    background: transparent;
     border-color: var(--clr-accent);
-    color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(215, 38, 56, 0.35);
+    color: var(--clr-accent);
+    box-shadow: 0 0 15px rgba(215, 38, 56, 0.25);
 }
 
 /* ── Buttons ── */
@@ -283,10 +377,9 @@ a:hover { color: var(--clr-accent); }
 }
 
 .btn-accent:hover {
-    background: linear-gradient(135deg, var(--clr-accent-dark), var(--clr-bordeaux));
+    background: linear-gradient(135deg, #e0394b, var(--clr-accent));
     color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(215, 38, 56, 0.35);
+    box-shadow: 0 0 20px rgba(215, 38, 56, 0.35);
 }
 
 .btn-outline-light {
@@ -296,7 +389,10 @@ a:hover { color: var(--clr-accent); }
 }
 
 .btn-outline-light:hover {
-    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--clr-accent);
+    color: var(--clr-accent-light);
+    box-shadow: 0 0 12px rgba(215, 38, 56, 0.15);
 }
 
 /* ── Sections ── */
@@ -344,9 +440,8 @@ a:hover { color: var(--clr-accent); }
 
 .glass-card:hover {
     background: var(--clr-surface-hover);
-    border-color: rgba(215, 38, 56, 0.2);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow);
+    border-color: rgba(215, 38, 56, 0.3);
+    box-shadow: 0 0 20px rgba(215, 38, 56, 0.08), var(--shadow);
 }
 
 /* ── About Section ── */
@@ -389,7 +484,8 @@ a:hover { color: var(--clr-accent); }
 
 .skill-badge:hover {
     background: rgba(215, 38, 56, 0.25) !important;
-    transform: translateY(-2px);
+    border-color: rgba(215, 38, 56, 0.45);
+    box-shadow: 0 0 10px rgba(215, 38, 56, 0.12);
 }
 
 .skill-badge-sm {
@@ -438,20 +534,70 @@ a:hover { color: var(--clr-accent); }
 }
 
 /* ── Projects ── */
-.project-icon {
-    width: 48px;
-    height: 48px;
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-bottom: 1px solid var(--clr-border);
+    background: #0a0a0a;
+}
+
+.project-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-card-img img {
+    transform: scale(1.05);
+}
+
+.project-icon-sm {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 8px;
     background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-dark));
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .project-card .btn-accent {
     font-size: 0.85rem;
+}
+
+/* ── Timeline & Experience accent lines ── */
+.timeline-card,
+.experience-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-card::before,
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--clr-accent), var(--clr-accent-dark), transparent);
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.timeline-card:hover::before,
+.experience-card:hover::before {
+    opacity: 1;
 }
 
 /* ── Contact ── */

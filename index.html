@@ -52,6 +52,13 @@
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
+            <div class="shape shape-ring shape-4"></div>
+            <div class="shape shape-ring shape-5"></div>
+            <div class="shape shape-dot shape-6"></div>
+            <div class="shape shape-dot shape-7"></div>
+            <div class="shape shape-dot shape-8"></div>
+            <div class="shape shape-9"></div>
+            <div class="shape shape-10"></div>
         </div>
         <div class="container position-relative">
             <div class="row align-items-center g-5">
@@ -334,124 +341,173 @@
 
                 <!-- Project 1: 4YA Store -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card p-4 h-100 d-flex flex-column">
-                        <div class="project-icon mb-3"><i class="bi bi-cart4"></i></div>
-                        <h5 class="fw-semibold">4YA Store</h5>
-                        <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_1">A modern full-stack e-commerce store with a real-world Python recommendation system using collaborative filtering, content-based, and hybrid algorithms.</p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge skill-badge-sm">JavaScript</span>
-                            <span class="badge skill-badge-sm">Python</span>
-                            <span class="badge skill-badge-sm">CSS</span>
-                            <span class="badge skill-badge-sm">Node.js</span>
+                    <div class="glass-card project-card h-100 d-flex flex-column">
+                        <div class="project-card-img">
+                            <img src="assets/img/projects/4ya-store.png" alt="4YA Store screenshot" loading="lazy">
                         </div>
-                        <a href="https://github.com/maasch/4ya_store" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                            <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                        </a>
+                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="project-icon-sm"><i class="bi bi-cart4"></i></div>
+                                <h5 class="fw-semibold mb-0">4YA Store</h5>
+                            </div>
+                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_1">A modern full-stack e-commerce store with a real-world Python recommendation system using collaborative filtering, content-based, and hybrid algorithms.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge skill-badge-sm">JavaScript</span>
+                                <span class="badge skill-badge-sm">Python</span>
+                                <span class="badge skill-badge-sm">CSS</span>
+                                <span class="badge skill-badge-sm">Node.js</span>
+                            </div>
+                            <a href="https://github.com/maasch/4ya_store" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
+                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2: Devil Dolphin Memory -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card p-4 h-100 d-flex flex-column">
-                        <div class="project-icon mb-3"><i class="bi bi-controller"></i></div>
-                        <h5 class="fw-semibold">Devil Dolphin Memory</h5>
-                        <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_2">A beautifully crafted, responsive memory card game with dynamic levels, live stats, achievement system, and OOP game engine with LocalStorage persistence.</p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge skill-badge-sm">HTML5</span>
-                            <span class="badge skill-badge-sm">CSS3</span>
-                            <span class="badge skill-badge-sm">JavaScript</span>
+                    <div class="glass-card project-card h-100 d-flex flex-column">
+                        <div class="project-card-img">
+                            <img src="assets/img/projects/devil-dolphin-memory.png" alt="Devil Dolphin Memory screenshot" loading="lazy">
                         </div>
-                        <a href="https://github.com/maasch/Devil_dolphin_memory" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                            <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                        </a>
+                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="project-icon-sm"><i class="bi bi-controller"></i></div>
+                                <h5 class="fw-semibold mb-0">Devil Dolphin Memory</h5>
+                            </div>
+                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_2">A beautifully crafted, responsive memory card game with dynamic levels, live stats, achievement system, and OOP game engine with LocalStorage persistence.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge skill-badge-sm">HTML5</span>
+                                <span class="badge skill-badge-sm">CSS3</span>
+                                <span class="badge skill-badge-sm">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/maasch/Devil_dolphin_memory" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
+                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3: Codex -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card p-4 h-100 d-flex flex-column">
-                        <div class="project-icon mb-3"><i class="bi bi-markdown"></i></div>
-                        <h5 class="fw-semibold">Codex</h5>
-                        <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_3">A lightweight real-time Markdown previewer with a built-in line-numbered editor, debounced rendering, and GitHub Flavored Markdown support.</p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge skill-badge-sm">JavaScript</span>
-                            <span class="badge skill-badge-sm">Node.js</span>
-                            <span class="badge skill-badge-sm">Express</span>
+                    <div class="glass-card project-card h-100 d-flex flex-column">
+                        <div class="project-card-img">
+                            <img src="assets/img/projects/codex.png" alt="Codex screenshot" loading="lazy">
                         </div>
-                        <a href="https://github.com/maasch/codex" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                            <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                        </a>
+                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="project-icon-sm"><i class="bi bi-markdown"></i></div>
+                                <h5 class="fw-semibold mb-0">Codex</h5>
+                            </div>
+                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_3">A lightweight real-time Markdown previewer with a built-in line-numbered editor, debounced rendering, and GitHub Flavored Markdown support.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge skill-badge-sm">JavaScript</span>
+                                <span class="badge skill-badge-sm">Node.js</span>
+                                <span class="badge skill-badge-sm">Express</span>
+                            </div>
+                            <a href="https://github.com/maasch/codex" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
+                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 4: CookCompass -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card p-4 h-100 d-flex flex-column">
-                        <div class="project-icon mb-3"><i class="bi bi-compass"></i></div>
-                        <h5 class="fw-semibold">CookCompass</h5>
-                        <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_4">A modern recipe discovery PWA powered by the Spoonacular API with intelligent search, advanced filtering, bookmarks, and full offline capability.</p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge skill-badge-sm">HTML5</span>
-                            <span class="badge skill-badge-sm">CSS3</span>
-                            <span class="badge skill-badge-sm">JavaScript</span>
-                            <span class="badge skill-badge-sm">PWA</span>
+                    <div class="glass-card project-card h-100 d-flex flex-column">
+                        <div class="project-card-img">
+                            <img src="assets/img/projects/cookcompass.png" alt="CookCompass screenshot" loading="lazy">
                         </div>
-                        <a href="https://github.com/maasch/cookcompass" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                            <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                        </a>
+                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="project-icon-sm"><i class="bi bi-compass"></i></div>
+                                <h5 class="fw-semibold mb-0">CookCompass</h5>
+                            </div>
+                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_4">A modern recipe discovery PWA powered by the Spoonacular API with intelligent search, advanced filtering, bookmarks, and full offline capability.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge skill-badge-sm">HTML5</span>
+                                <span class="badge skill-badge-sm">CSS3</span>
+                                <span class="badge skill-badge-sm">JavaScript</span>
+                                <span class="badge skill-badge-sm">PWA</span>
+                            </div>
+                            <a href="https://github.com/maasch/cookcompass" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
+                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 5: Weather App -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card p-4 h-100 d-flex flex-column">
-                        <div class="project-icon mb-3"><i class="bi bi-cloud-sun"></i></div>
-                        <h5 class="fw-semibold">Weather App</h5>
-                        <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_5">An advanced full-stack weather application with user authentication, 5-day forecasts, city images via Unsplash, marine data, and dark/light theme toggle.</p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge skill-badge-sm">JavaScript</span>
-                            <span class="badge skill-badge-sm">Node.js</span>
-                            <span class="badge skill-badge-sm">Express</span>
-                            <span class="badge skill-badge-sm">MySQL</span>
+                    <div class="glass-card project-card h-100 d-flex flex-column">
+                        <div class="project-card-img">
+                            <img src="assets/img/projects/weatherapp.png" alt="Weather App screenshot" loading="lazy">
                         </div>
-                        <a href="https://github.com/maasch/Weather-App" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                            <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                        </a>
+                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="project-icon-sm"><i class="bi bi-cloud-sun"></i></div>
+                                <h5 class="fw-semibold mb-0">Weather App</h5>
+                            </div>
+                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_5">An advanced full-stack weather application with user authentication, 5-day forecasts, city images via Unsplash, marine data, and dark/light theme toggle.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge skill-badge-sm">JavaScript</span>
+                                <span class="badge skill-badge-sm">Node.js</span>
+                                <span class="badge skill-badge-sm">Express</span>
+                                <span class="badge skill-badge-sm">MySQL</span>
+                            </div>
+                            <a href="https://github.com/maasch/Weather-App" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
+                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 6: Bright TV -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card p-4 h-100 d-flex flex-column">
-                        <div class="project-icon mb-3"><i class="bi bi-film"></i></div>
-                        <h5 class="fw-semibold">Bright TV</h5>
-                        <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_6">A movie & TV show search app powered by TMDB and OMDB APIs with trending feeds, advanced search, personal library, and a clean dark-themed UI.</p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge skill-badge-sm">HTML5</span>
-                            <span class="badge skill-badge-sm">CSS3</span>
-                            <span class="badge skill-badge-sm">JavaScript</span>
-                            <span class="badge skill-badge-sm">TMDB API</span>
+                    <div class="glass-card project-card h-100 d-flex flex-column">
+                        <div class="project-card-img">
+                            <img src="assets/img/projects/bright-tv.png" alt="Bright TV screenshot" loading="lazy">
                         </div>
-                        <a href="https://github.com/maasch/Bright-TV" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                            <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                        </a>
+                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="project-icon-sm"><i class="bi bi-film"></i></div>
+                                <h5 class="fw-semibold mb-0">Bright TV</h5>
+                            </div>
+                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_6">A movie & TV show search app powered by TMDB and OMDB APIs with trending feeds, advanced search, personal library, and a clean dark-themed UI.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge skill-badge-sm">HTML5</span>
+                                <span class="badge skill-badge-sm">CSS3</span>
+                                <span class="badge skill-badge-sm">JavaScript</span>
+                                <span class="badge skill-badge-sm">TMDB API</span>
+                            </div>
+                            <a href="https://github.com/maasch/Bright-TV" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
+                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 7: Bright Quiz -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card p-4 h-100 d-flex flex-column">
-                        <div class="project-icon mb-3"><i class="bi bi-lightbulb"></i></div>
-                        <h5 class="fw-semibold">Bright Quiz</h5>
-                        <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_7">An interactive quiz app covering web development topics with three difficulty levels, real-time scoring, glassmorphism UI, and randomized answers.</p>
-                        <div class="d-flex flex-wrap gap-2 mb-3">
-                            <span class="badge skill-badge-sm">HTML5</span>
-                            <span class="badge skill-badge-sm">CSS3</span>
-                            <span class="badge skill-badge-sm">JavaScript</span>
+                    <div class="glass-card project-card h-100 d-flex flex-column">
+                        <div class="project-card-img">
+                            <img src="assets/img/projects/bright-quiz.png" alt="Bright Quiz screenshot" loading="lazy">
                         </div>
-                        <a href="https://github.com/maasch/Bright-quiz" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                            <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                        </a>
+                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <div class="project-icon-sm"><i class="bi bi-lightbulb"></i></div>
+                                <h5 class="fw-semibold mb-0">Bright Quiz</h5>
+                            </div>
+                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_7">An interactive quiz app covering web development topics with three difficulty levels, real-time scoring, glassmorphism UI, and randomized answers.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge skill-badge-sm">HTML5</span>
+                                <span class="badge skill-badge-sm">CSS3</span>
+                                <span class="badge skill-badge-sm">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/maasch/Bright-quiz" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
+                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
