@@ -19,6 +19,7 @@ const translations = {
         hero_intro: "I build modern, responsive, and user-friendly web applications. Combining clean code with strong UX principles to create fast, intuitive digital experiences.",
         hero_cta: "Get In Touch",
         hero_projects: "View Projects",
+        hero_cv: "Download CV",
 
         // About
         about_subtitle: "Get to Know Me",
@@ -119,6 +120,7 @@ const translations = {
         hero_intro: "Je crée des applications web modernes, responsives et conviviales. Je combine un code propre avec des principes UX solides pour offrir des expériences numériques rapides et intuitives.",
         hero_cta: "Me Contacter",
         hero_projects: "Voir les Projets",
+        hero_cv: "Télécharger CV",
 
         // About
         about_subtitle: "Apprenez à Me Connaître",
