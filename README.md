@@ -48,20 +48,31 @@ A professional, responsive, bilingual (EN/FR) portfolio website built with **Boo
 
 ## 📁 Project Structure
 
-```
-├── index.html              # Main page (all sections)
+```text
+├── index.html                  # Main page (all sections)
 ├── README.md
 └── assets/
     ├── css/
-    │   └── style.css       # Custom styles & color palette
-    ├── js/
-    │   └── language-toggle.js  # EN/FR translation system
+    │   └── style.css           # Custom styles & color palette
     ├── cv/
     │   └── Adel_Maach_CV.pdf   # Downloadable CV
-    └── img/
-        ├── profile.png     # Profile photo
-        ├── favicon.png     # Browser tab icon
-        └── screenshots/    # README screenshots
+    ├── img/
+    │   ├── favicon.png         # Browser tab icon
+    │   ├── profile.png         # Profile photo
+    │   ├── projects/           # Project thumbnails
+    │   │   ├── 4ya-store.png
+    │   │   ├── bright-quiz.png
+    │   │   ├── bright-tv.png
+    │   │   ├── codex.png
+    │   │   ├── cookcompass.png
+    │   │   ├── devil-dolphin-memory.png
+    │   │   └── weatherapp.png
+    │   └── screenshots/        # README screenshots
+    │       ├── contact.png
+    │       ├── hero.png
+    │       └── projects.png
+    └── js/
+        └── language-toggle.js  # EN/FR translation system
 ```
 
 ---
