@@ -1,49 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adel Maach — Frontend Developer & UI/UX Designer. Portfolio showcasing modern web applications, responsive designs, and user-focused interfaces.">
-    <meta name="keywords" content="Frontend Developer, UI/UX Designer, React, TypeScript, JavaScript, Portfolio, Adel Maach">
-    <meta name="author" content="Adel Maach">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Adel Maach — Frontend Developer & UI/UX Designer. Portfolio showcasing modern web applications, responsive designs, and user-focused interfaces."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, UI/UX Designer, React, TypeScript, JavaScript, Portfolio, Adel Maach"
+    />
+    <meta name="author" content="Adel Maach" />
     <title>Adel Maach — Frontend Developer & UI/UX Designer</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body data-bs-spy="scrollspy" data-bs-target="#mainNav" data-bs-offset="100">
-
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-bs-spy="scrollspy" data-bs-target="#mainNav" data-bs-offset="100">
     <!-- ======================== NAVBAR ======================== -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">AM<span class="text-accent">.</span></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#hero" data-i18n="nav_home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav_skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav_education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav_experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav_projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <button class="btn btn-outline-light btn-sm lang-toggle" id="langToggle" onclick="toggleLanguage()" aria-label="Switch Language">
-                            <i class="bi bi-translate me-1"></i> FR
-                        </button>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          >AM<span class="text-accent">.</span></a
+        >
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero" data-i18n="nav_home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" data-i18n="nav_about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" data-i18n="nav_skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education" data-i18n="nav_education"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience" data-i18n="nav_experience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" data-i18n="nav_projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-i18n="nav_contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item ms-lg-3">
+              <button
+                class="btn btn-outline-light btn-sm lang-toggle"
+                id="langToggle"
+                onclick="toggleLanguage()"
+                aria-label="Switch Language"
+              >
+                <i class="bi bi-translate me-1"></i> FR
+              </button>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- ======================== HERO ======================== -->
@@ -79,7 +132,7 @@
                         </a>
                     </div>
                     <div class="social-links d-flex gap-3">
-                        <a href="https://github.com/maasch" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <a href="https://github.com/maasch" target="_blank" rel="noopeneAdel_Maach_CV.pdfr noreferrer" class="social-link" aria-label="GitHub">
                             <i class="bi bi-github"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/adel-maach/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
@@ -112,493 +165,862 @@
 
     <!-- ======================== ABOUT ======================== -->
     <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h6 class="section-subtitle text-accent" data-i18n="about_subtitle">Get to Know Me</h6>
-                    <h2 class="section-title" data-i18n="about_title">About Me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="about-card glass-card p-4 p-md-5">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-md-12">
-                                <p class="about-text mb-3" data-i18n="about_p1">I'm a Frontend Developer and UI/UX Designer focused on building modern, responsive, and user-friendly web applications. I develop websites and interfaces using React, TypeScript, JavaScript, HTML, and CSS — combining clean code with strong UX principles to create fast and intuitive user experiences.</p>
-                                <p class="about-text mb-3" data-i18n="about_p2">I've built multiple real-world web projects from scratch, including interactive applications, API-driven platforms, and modern dashboards — all available on my GitHub portfolio.</p>
-                                <p class="about-text mb-0" data-i18n="about_p3">My background in digital marketing and user experience allows me to design interfaces that are not only visually modern but also structured to improve usability and engagement. If you need a clean, responsive, and professionally built frontend — I can help turn your idea into a functional product.</p>
-                            </div>
-                        </div>
-                        <div class="row mt-4 g-3">
-                            <div class="col-sm-6 col-md-3">
-                                <div class="about-stat text-center">
-                                    <h3 class="text-accent fw-bold mb-0">9+</h3>
-                                    <small class="text-muted-light" data-i18n="about_stat_projects">Projects Built</small>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="about-stat text-center">
-                                    <h3 class="text-accent fw-bold mb-0">6+</h3>
-                                    <small class="text-muted-light" data-i18n="about_stat_apis">API Integrations</small>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="about-stat text-center">
-                                    <h3 class="text-accent fw-bold mb-0">2</h3>
-                                    <small class="text-muted-light" data-i18n="about_stat_internships">Internships</small>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3">
-                                <div class="about-stat text-center">
-                                    <h3 class="text-accent fw-bold mb-0">5+</h3>
-                                    <small class="text-muted-light" data-i18n="about_stat_technologies">Technologies</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6 class="section-subtitle text-accent" data-i18n="about_subtitle">
+              Get to Know Me
+            </h6>
+            <h2 class="section-title" data-i18n="about_title">About Me</h2>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="about-card glass-card p-4 p-md-5">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-12">
+                  <p class="about-text mb-3" data-i18n="about_p1">
+                    I'm a Frontend Developer and UI/UX Designer focused on
+                    building modern, responsive, and user-friendly web
+                    applications. I develop websites and interfaces using React,
+                    TypeScript, JavaScript, HTML, and CSS — combining clean code
+                    with strong UX principles to create fast and intuitive user
+                    experiences.
+                  </p>
+                  <p class="about-text mb-3" data-i18n="about_p2">
+                    I've built multiple real-world web projects from scratch,
+                    including interactive applications, API-driven platforms,
+                    and modern dashboards — all available on my GitHub
+                    portfolio.
+                  </p>
+                  <p class="about-text mb-0" data-i18n="about_p3">
+                    My background in digital marketing and user experience
+                    allows me to design interfaces that are not only visually
+                    modern but also structured to improve usability and
+                    engagement. If you need a clean, responsive, and
+                    professionally built frontend — I can help turn your idea
+                    into a functional product.
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-4 g-3">
+                <div class="col-sm-6 col-md-3">
+                  <div class="about-stat text-center">
+                    <h3 class="text-accent fw-bold mb-0">9+</h3>
+                    <small
+                      class="text-muted-light"
+                      data-i18n="about_stat_projects"
+                      >Projects Built</small
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="about-stat text-center">
+                    <h3 class="text-accent fw-bold mb-0">6+</h3>
+                    <small class="text-muted-light" data-i18n="about_stat_apis"
+                      >API Integrations</small
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="about-stat text-center">
+                    <h3 class="text-accent fw-bold mb-0">2</h3>
+                    <small
+                      class="text-muted-light"
+                      data-i18n="about_stat_internships"
+                      >Internships</small
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="about-stat text-center">
+                    <h3 class="text-accent fw-bold mb-0">5+</h3>
+                    <small
+                      class="text-muted-light"
+                      data-i18n="about_stat_technologies"
+                      >Technologies</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ======================== SKILLS ======================== -->
     <section id="skills" class="section-padding section-alt">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h6 class="section-subtitle text-accent" data-i18n="skills_subtitle">What I Work With</h6>
-                    <h2 class="section-title" data-i18n="skills_title">Skills & Expertise</h2>
-                </div>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <!-- Frontend Skills -->
-                <div class="col-lg-5 col-md-6">
-                    <div class="glass-card skill-card p-4 h-100">
-                        <div class="skill-card-icon mb-3">
-                            <i class="bi bi-code-slash"></i>
-                        </div>
-                        <h5 class="fw-semibold mb-4" data-i18n="skills_frontend">Frontend Development</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge skill-badge">HTML5</span>
-                            <span class="badge skill-badge">CSS3</span>
-                            <span class="badge skill-badge">JavaScript (ES6+)</span>
-                            <span class="badge skill-badge">React.js</span>
-                            <span class="badge skill-badge">TypeScript</span>
-                            <span class="badge skill-badge">Bootstrap</span>
-                            <span class="badge skill-badge">Responsive Design</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- UI/UX Skills -->
-                <div class="col-lg-5 col-md-6">
-                    <div class="glass-card skill-card p-4 h-100">
-                        <div class="skill-card-icon mb-3">
-                            <i class="bi bi-palette"></i>
-                        </div>
-                        <h5 class="fw-semibold mb-4" data-i18n="skills_uiux">UI / UX Design</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge skill-badge" data-i18n="skill_uid">User Interface Design</span>
-                            <span class="badge skill-badge" data-i18n="skill_uxo">UX Optimization</span>
-                            <span class="badge skill-badge" data-i18n="skill_wireframing">Wireframing & Layouts</span>
-                            <span class="badge skill-badge" data-i18n="skill_modern_design">Modern Web Design</span>
-                            <span class="badge skill-badge" data-i18n="skill_mobile_first">Mobile-First Development</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tools & Workflow -->
-                <div class="col-lg-5 col-md-6">
-                    <div class="glass-card skill-card p-4 h-100">
-                        <div class="skill-card-icon mb-3">
-                            <i class="bi bi-tools"></i>
-                        </div>
-                        <h5 class="fw-semibold mb-4" data-i18n="skills_tools">Tools & Workflow</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge skill-badge">Git & GitHub</span>
-                            <span class="badge skill-badge" data-i18n="skill_rest">REST API Integration</span>
-                            <span class="badge skill-badge">Node.js</span>
-                            <span class="badge skill-badge">Express.js</span>
-                            <span class="badge skill-badge" data-i18n="skill_debugging">Debugging & Problem Solving</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Performance & Quality -->
-                <div class="col-lg-5 col-md-6">
-                    <div class="glass-card skill-card p-4 h-100">
-                        <div class="skill-card-icon mb-3">
-                            <i class="bi bi-speedometer2"></i>
-                        </div>
-                        <h5 class="fw-semibold mb-4" data-i18n="skills_performance">Performance & Quality</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="badge skill-badge" data-i18n="skill_clean_code">Clean & Maintainable Code</span>
-                            <span class="badge skill-badge" data-i18n="skill_perf_opt">Performance Optimization</span>
-                            <span class="badge skill-badge" data-i18n="skill_cross_browser">Cross-Browser Compatibility</span>
-                            <span class="badge skill-badge" data-i18n="skill_web_perf">Web Performance</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6
+              class="section-subtitle text-accent"
+              data-i18n="skills_subtitle"
+            >
+              What I Work With
+            </h6>
+            <h2 class="section-title" data-i18n="skills_title">
+              Skills & Expertise
+            </h2>
+          </div>
         </div>
+        <div class="row g-4 justify-content-center">
+          <!-- Frontend Skills -->
+          <div class="col-lg-5 col-md-6">
+            <div class="glass-card skill-card p-4 h-100">
+              <div class="skill-card-icon mb-3">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h5 class="fw-semibold mb-4" data-i18n="skills_frontend">
+                Frontend Development
+              </h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge">HTML5</span>
+                <span class="badge skill-badge">CSS3</span>
+                <span class="badge skill-badge">JavaScript (ES6+)</span>
+                <span class="badge skill-badge">React.js</span>
+                <span class="badge skill-badge">TypeScript</span>
+                <span class="badge skill-badge">Bootstrap</span>
+                <span class="badge skill-badge">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+          <!-- UI/UX Skills -->
+          <div class="col-lg-5 col-md-6">
+            <div class="glass-card skill-card p-4 h-100">
+              <div class="skill-card-icon mb-3">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h5 class="fw-semibold mb-4" data-i18n="skills_uiux">
+                UI / UX Design
+              </h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge" data-i18n="skill_uid"
+                  >User Interface Design</span
+                >
+                <span class="badge skill-badge" data-i18n="skill_uxo"
+                  >UX Optimization</span
+                >
+                <span class="badge skill-badge" data-i18n="skill_wireframing"
+                  >Wireframing & Layouts</span
+                >
+                <span class="badge skill-badge" data-i18n="skill_modern_design"
+                  >Modern Web Design</span
+                >
+                <span class="badge skill-badge" data-i18n="skill_mobile_first"
+                  >Mobile-First Development</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tools & Workflow -->
+          <div class="col-lg-5 col-md-6">
+            <div class="glass-card skill-card p-4 h-100">
+              <div class="skill-card-icon mb-3">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h5 class="fw-semibold mb-4" data-i18n="skills_tools">
+                Tools & Workflow
+              </h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge">Git & GitHub</span>
+                <span class="badge skill-badge" data-i18n="skill_rest"
+                  >REST API Integration</span
+                >
+                <span class="badge skill-badge">Node.js</span>
+                <span class="badge skill-badge">Express.js</span>
+                <span class="badge skill-badge" data-i18n="skill_debugging"
+                  >Debugging & Problem Solving</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Performance & Quality -->
+          <div class="col-lg-5 col-md-6">
+            <div class="glass-card skill-card p-4 h-100">
+              <div class="skill-card-icon mb-3">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h5 class="fw-semibold mb-4" data-i18n="skills_performance">
+                Performance & Quality
+              </h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge" data-i18n="skill_clean_code"
+                  >Clean & Maintainable Code</span
+                >
+                <span class="badge skill-badge" data-i18n="skill_perf_opt"
+                  >Performance Optimization</span
+                >
+                <span class="badge skill-badge" data-i18n="skill_cross_browser"
+                  >Cross-Browser Compatibility</span
+                >
+                <span class="badge skill-badge" data-i18n="skill_web_perf"
+                  >Web Performance</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ======================== EDUCATION ======================== -->
     <section id="education" class="section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h6 class="section-subtitle text-accent" data-i18n="education_subtitle">My Academic Journey</h6>
-                    <h2 class="section-title" data-i18n="education_title">Education</h2>
-                </div>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <div class="glass-card timeline-card p-4 h-100">
-                        <div class="timeline-icon mb-3">
-                            <i class="bi bi-mortarboard-fill"></i>
-                        </div>
-                        <span class="badge badge-year mb-2" data-i18n="edu_year_2">2024 — Present</span>
-                        <h5 class="fw-semibold" data-i18n="edu_title_2">DUT in Digital Marketing & User Experience</h5>
-                        <p class="text-muted-light mb-0" data-i18n="edu_school_2">École Supérieure de Technologie — Dakhla</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="glass-card timeline-card p-4 h-100">
-                        <div class="timeline-icon mb-3">
-                            <i class="bi bi-book-fill"></i>
-                        </div>
-                        <span class="badge badge-year mb-2" data-i18n="edu_year_1">2024</span>
-                        <h5 class="fw-semibold" data-i18n="edu_title_1">Baccalaureate in Economic Sciences</h5>
-                        <p class="text-muted-light mb-0" data-i18n="edu_desc_1">Foundation in economics, analytical thinking, and business principles.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6
+              class="section-subtitle text-accent"
+              data-i18n="education_subtitle"
+            >
+              My Academic Journey
+            </h6>
+            <h2 class="section-title" data-i18n="education_title">Education</h2>
+          </div>
         </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card timeline-card p-4 h-100">
+              <div class="timeline-icon mb-3">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <span class="badge badge-year mb-2" data-i18n="edu_year_2"
+                >2024 — Present</span
+              >
+              <h5 class="fw-semibold" data-i18n="edu_title_2">
+                DUT in Digital Marketing & User Experience
+              </h5>
+              <p class="text-muted-light mb-0" data-i18n="edu_school_2">
+                École Supérieure de Technologie — Dakhla
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card timeline-card p-4 h-100">
+              <div class="timeline-icon mb-3">
+                <i class="bi bi-book-fill"></i>
+              </div>
+              <span class="badge badge-year mb-2" data-i18n="edu_year_1"
+                >2024</span
+              >
+              <h5 class="fw-semibold" data-i18n="edu_title_1">
+                Baccalaureate in Economic Sciences
+              </h5>
+              <p class="text-muted-light mb-0" data-i18n="edu_desc_1">
+                Foundation in economics, analytical thinking, and business
+                principles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ======================== EXPERIENCE ======================== -->
     <section id="experience" class="section-padding section-alt">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h6 class="section-subtitle text-accent" data-i18n="experience_subtitle">Where I've Worked</h6>
-                    <h2 class="section-title" data-i18n="experience_title">Professional Experience</h2>
-                </div>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-5">
-                    <div class="glass-card experience-card p-4 h-100">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <div class="experience-icon">
-                                <i class="bi bi-building"></i>
-                            </div>
-                            <a href="https://www.marsamaroc.co.ma/fr/ports-et-terminaux/port-de-dakhla" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                        <span class="badge badge-year mb-2" data-i18n="exp_year_1">Internship</span>
-                        <h5 class="fw-semibold" data-i18n="exp_title_1">Marsa Maroc — Port of Dakhla</h5>
-                        <p class="text-muted-light mb-2" data-i18n="exp_desc_1">Observation internship in the commercial department. Worked on invoicing (facturation) and debt recovery (recouvrement) of port operations and commercial services.</p>
-                        <div class="d-flex flex-wrap gap-2 mt-auto">
-                            <span class="badge skill-badge-sm">Excel</span>
-                            <span class="badge skill-badge-sm">AS400</span>
-                            <span class="badge skill-badge-sm" data-i18n="exp_tool_invoicing">Invoicing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="glass-card experience-card p-4 h-100">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <div class="experience-icon">
-                                <i class="bi bi-briefcase-fill"></i>
-                            </div>
-                            <a href="https://fbm.ma/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light">
-                                <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                        <span class="badge badge-year mb-2" data-i18n="exp_year_2">Internship</span>
-                        <h5 class="fw-semibold" data-i18n="exp_title_2">FBM — Financial & Business Management</h5>
-                        <p class="text-muted-light mb-2" data-i18n="exp_desc_2">Professional internship at a financial and business management firm. Gained hands-on experience in business operations and administrative workflows.</p>
-                        <div class="d-flex flex-wrap gap-2 mt-auto">
-                            <span class="badge skill-badge-sm" data-i18n="exp_tool_finance">Finance</span>
-                            <span class="badge skill-badge-sm" data-i18n="exp_tool_admin">Administration</span>
-                            <span class="badge skill-badge-sm" data-i18n="exp_tool_mgmt">Management</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6
+              class="section-subtitle text-accent"
+              data-i18n="experience_subtitle"
+            >
+              Where I've Worked
+            </h6>
+            <h2 class="section-title" data-i18n="experience_title">
+              Professional Experience
+            </h2>
+          </div>
         </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card experience-card p-4 h-100">
+              <div
+                class="d-flex justify-content-between align-items-start mb-3"
+              >
+                <div class="experience-icon">
+                  <i class="bi bi-building"></i>
+                </div>
+                <a
+                  href="https://www.marsamaroc.co.ma/fr/ports-et-terminaux/port-de-dakhla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-light"
+                >
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+              <span class="badge badge-year mb-2" data-i18n="exp_year_1"
+                >Internship</span
+              >
+              <h5 class="fw-semibold" data-i18n="exp_title_1">
+                Marsa Maroc — Port of Dakhla
+              </h5>
+              <p class="text-muted-light mb-2" data-i18n="exp_desc_1">
+                Observation internship in the commercial department. Worked on
+                invoicing (facturation) and debt recovery (recouvrement) of port
+                operations and commercial services.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-auto">
+                <span class="badge skill-badge-sm">Excel</span>
+                <span class="badge skill-badge-sm">AS400</span>
+                <span
+                  class="badge skill-badge-sm"
+                  data-i18n="exp_tool_invoicing"
+                  >Invoicing</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="glass-card experience-card p-4 h-100">
+              <div
+                class="d-flex justify-content-between align-items-start mb-3"
+              >
+                <div class="experience-icon">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+                <a
+                  href="https://fbm.ma/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-sm btn-outline-light"
+                >
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+              <span class="badge badge-year mb-2" data-i18n="exp_year_2"
+                >Internship</span
+              >
+              <h5 class="fw-semibold" data-i18n="exp_title_2">
+                FBM — Financial & Business Management
+              </h5>
+              <p class="text-muted-light mb-2" data-i18n="exp_desc_2">
+                Professional internship at a financial and business management
+                firm. Gained hands-on experience in business operations and
+                administrative workflows.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-auto">
+                <span class="badge skill-badge-sm" data-i18n="exp_tool_finance"
+                  >Finance</span
+                >
+                <span class="badge skill-badge-sm" data-i18n="exp_tool_admin"
+                  >Administration</span
+                >
+                <span class="badge skill-badge-sm" data-i18n="exp_tool_mgmt"
+                  >Management</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ======================== PROJECTS ======================== -->
     <section id="projects" class="section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h6 class="section-subtitle text-accent" data-i18n="projects_subtitle">What I've Built</h6>
-                    <h2 class="section-title" data-i18n="projects_title">Projects</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-
-                <!-- Project 1: 4YA Store -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card h-100 d-flex flex-column">
-                        <div class="project-card-img">
-                            <img src="assets/img/projects/4ya-store.png" alt="4YA Store screenshot" loading="lazy">
-                        </div>
-                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <div class="project-icon-sm"><i class="bi bi-cart4"></i></div>
-                                <h5 class="fw-semibold mb-0">4YA Store</h5>
-                            </div>
-                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_1">A modern full-stack e-commerce store with a real-world Python recommendation system using collaborative filtering, content-based, and hybrid algorithms.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge skill-badge-sm">JavaScript</span>
-                                <span class="badge skill-badge-sm">Python</span>
-                                <span class="badge skill-badge-sm">CSS</span>
-                                <span class="badge skill-badge-sm">Node.js</span>
-                            </div>
-                            <a href="https://github.com/maasch/4ya_store" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Devil Dolphin Memory -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card h-100 d-flex flex-column">
-                        <div class="project-card-img">
-                            <img src="assets/img/projects/devil-dolphin-memory.png" alt="Devil Dolphin Memory screenshot" loading="lazy">
-                        </div>
-                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <div class="project-icon-sm"><i class="bi bi-controller"></i></div>
-                                <h5 class="fw-semibold mb-0">Devil Dolphin Memory</h5>
-                            </div>
-                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_2">A beautifully crafted, responsive memory card game with dynamic levels, live stats, achievement system, and OOP game engine with LocalStorage persistence.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge skill-badge-sm">HTML5</span>
-                                <span class="badge skill-badge-sm">CSS3</span>
-                                <span class="badge skill-badge-sm">JavaScript</span>
-                            </div>
-                            <a href="https://github.com/maasch/Devil_dolphin_memory" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Codex -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card h-100 d-flex flex-column">
-                        <div class="project-card-img">
-                            <img src="assets/img/projects/codex.png" alt="Codex screenshot" loading="lazy">
-                        </div>
-                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <div class="project-icon-sm"><i class="bi bi-markdown"></i></div>
-                                <h5 class="fw-semibold mb-0">Codex</h5>
-                            </div>
-                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_3">A lightweight real-time Markdown previewer with a built-in line-numbered editor, debounced rendering, and GitHub Flavored Markdown support.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge skill-badge-sm">JavaScript</span>
-                                <span class="badge skill-badge-sm">Node.js</span>
-                                <span class="badge skill-badge-sm">Express</span>
-                            </div>
-                            <a href="https://github.com/maasch/codex" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: CookCompass -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card h-100 d-flex flex-column">
-                        <div class="project-card-img">
-                            <img src="assets/img/projects/cookcompass.png" alt="CookCompass screenshot" loading="lazy">
-                        </div>
-                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <div class="project-icon-sm"><i class="bi bi-compass"></i></div>
-                                <h5 class="fw-semibold mb-0">CookCompass</h5>
-                            </div>
-                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_4">A modern recipe discovery PWA powered by the Spoonacular API with intelligent search, advanced filtering, bookmarks, and full offline capability.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge skill-badge-sm">HTML5</span>
-                                <span class="badge skill-badge-sm">CSS3</span>
-                                <span class="badge skill-badge-sm">JavaScript</span>
-                                <span class="badge skill-badge-sm">PWA</span>
-                            </div>
-                            <a href="https://github.com/maasch/cookcompass" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Weather App -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card h-100 d-flex flex-column">
-                        <div class="project-card-img">
-                            <img src="assets/img/projects/weatherapp.png" alt="Weather App screenshot" loading="lazy">
-                        </div>
-                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <div class="project-icon-sm"><i class="bi bi-cloud-sun"></i></div>
-                                <h5 class="fw-semibold mb-0">Weather App</h5>
-                            </div>
-                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_5">An advanced full-stack weather application with user authentication, 5-day forecasts, city images via Unsplash, marine data, and dark/light theme toggle.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge skill-badge-sm">JavaScript</span>
-                                <span class="badge skill-badge-sm">Node.js</span>
-                                <span class="badge skill-badge-sm">Express</span>
-                                <span class="badge skill-badge-sm">MySQL</span>
-                            </div>
-                            <a href="https://github.com/maasch/Weather-App" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Bright TV -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card h-100 d-flex flex-column">
-                        <div class="project-card-img">
-                            <img src="assets/img/projects/bright-tv.png" alt="Bright TV screenshot" loading="lazy">
-                        </div>
-                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <div class="project-icon-sm"><i class="bi bi-film"></i></div>
-                                <h5 class="fw-semibold mb-0">Bright TV</h5>
-                            </div>
-                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_6">A movie & TV show search app powered by TMDB and OMDB APIs with trending feeds, advanced search, personal library, and a clean dark-themed UI.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge skill-badge-sm">HTML5</span>
-                                <span class="badge skill-badge-sm">CSS3</span>
-                                <span class="badge skill-badge-sm">JavaScript</span>
-                                <span class="badge skill-badge-sm">TMDB API</span>
-                            </div>
-                            <a href="https://github.com/maasch/Bright-TV" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7: Bright Quiz -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="glass-card project-card h-100 d-flex flex-column">
-                        <div class="project-card-img">
-                            <img src="assets/img/projects/bright-quiz.png" alt="Bright Quiz screenshot" loading="lazy">
-                        </div>
-                        <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <div class="project-icon-sm"><i class="bi bi-lightbulb"></i></div>
-                                <h5 class="fw-semibold mb-0">Bright Quiz</h5>
-                            </div>
-                            <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_7">An interactive quiz app covering web development topics with three difficulty levels, real-time scoring, glassmorphism UI, and randomized answers.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <span class="badge skill-badge-sm">HTML5</span>
-                                <span class="badge skill-badge-sm">CSS3</span>
-                                <span class="badge skill-badge-sm">JavaScript</span>
-                            </div>
-                            <a href="https://github.com/maasch/Bright-quiz" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm mt-auto">
-                                <i class="bi bi-github me-1"></i> <span data-i18n="proj_view">View on GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6
+              class="section-subtitle text-accent"
+              data-i18n="projects_subtitle"
+            >
+              What I've Built
+            </h6>
+            <h2 class="section-title" data-i18n="projects_title">Projects</h2>
+          </div>
         </div>
+        <div class="row g-4">
+          <!-- Project 1: 4YA Store -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card project-card h-100 d-flex flex-column">
+              <div class="project-card-img">
+                <img
+                  src="assets/img/projects/4ya-store.webp"
+                  alt="4YA Store screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="project-icon-sm"><i class="bi bi-cart4"></i></div>
+                  <h5 class="fw-semibold mb-0">4YA Store</h5>
+                </div>
+                <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_1">
+                  A modern full-stack e-commerce store with a real-world Python
+                  recommendation system using collaborative filtering,
+                  content-based, and hybrid algorithms.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge skill-badge-sm">JavaScript</span>
+                  <span class="badge skill-badge-sm">Python</span>
+                  <span class="badge skill-badge-sm">CSS</span>
+                  <span class="badge skill-badge-sm">Node.js</span>
+                </div>
+                <a
+                  href="https://github.com/maasch/4ya_store"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-sm mt-auto"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  <span data-i18n="proj_view">View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Devil Dolphin Memory -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card project-card h-100 d-flex flex-column">
+              <div class="project-card-img">
+                <img
+                  src="assets/img/projects/devil-dolphin-memory.webp"
+                  alt="Devil Dolphin Memory screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="project-icon-sm">
+                    <i class="bi bi-controller"></i>
+                  </div>
+                  <h5 class="fw-semibold mb-0">Devil Dolphin Memory</h5>
+                </div>
+                <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_2">
+                  A beautifully crafted, responsive memory card game with
+                  dynamic levels, live stats, achievement system, and OOP game
+                  engine with LocalStorage persistence.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge skill-badge-sm">HTML5</span>
+                  <span class="badge skill-badge-sm">CSS3</span>
+                  <span class="badge skill-badge-sm">JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/maasch/Devil_dolphin_memory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-sm mt-auto"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  <span data-i18n="proj_view">View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Codex -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card project-card h-100 d-flex flex-column">
+              <div class="project-card-img">
+                <img
+                  src="assets/img/projects/codex.webp"
+                  alt="Codex screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="project-icon-sm">
+                    <i class="bi bi-markdown"></i>
+                  </div>
+                  <h5 class="fw-semibold mb-0">Codex</h5>
+                </div>
+                <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_3">
+                  A lightweight real-time Markdown previewer with a built-in
+                  line-numbered editor, debounced rendering, and GitHub Flavored
+                  Markdown support.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge skill-badge-sm">JavaScript</span>
+                  <span class="badge skill-badge-sm">Node.js</span>
+                  <span class="badge skill-badge-sm">Express</span>
+                </div>
+                <a
+                  href="https://github.com/maasch/codex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-sm mt-auto"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  <span data-i18n="proj_view">View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: CookCompass -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card project-card h-100 d-flex flex-column">
+              <div class="project-card-img">
+                <img
+                  src="assets/img/projects/cookcompass.webp"
+                  alt="CookCompass screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="project-icon-sm">
+                    <i class="bi bi-compass"></i>
+                  </div>
+                  <h5 class="fw-semibold mb-0">CookCompass</h5>
+                </div>
+                <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_4">
+                  A modern recipe discovery PWA powered by the Spoonacular API
+                  with intelligent search, advanced filtering, bookmarks, and
+                  full offline capability.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge skill-badge-sm">HTML5</span>
+                  <span class="badge skill-badge-sm">CSS3</span>
+                  <span class="badge skill-badge-sm">JavaScript</span>
+                  <span class="badge skill-badge-sm">PWA</span>
+                </div>
+                <a
+                  href="https://github.com/maasch/cookcompass"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-sm mt-auto"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  <span data-i18n="proj_view">View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Weather App -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card project-card h-100 d-flex flex-column">
+              <div class="project-card-img">
+                <img
+                  src="assets/img/projects/weatherapp.webp"
+                  alt="Weather App screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="project-icon-sm">
+                    <i class="bi bi-cloud-sun"></i>
+                  </div>
+                  <h5 class="fw-semibold mb-0">Weather App</h5>
+                </div>
+                <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_5">
+                  An advanced full-stack weather application with user
+                  authentication, 5-day forecasts, city images via Unsplash,
+                  marine data, and dark/light theme toggle.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge skill-badge-sm">JavaScript</span>
+                  <span class="badge skill-badge-sm">Node.js</span>
+                  <span class="badge skill-badge-sm">Express</span>
+                  <span class="badge skill-badge-sm">MySQL</span>
+                </div>
+                <a
+                  href="https://github.com/maasch/Weather-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-sm mt-auto"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  <span data-i18n="proj_view">View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Bright TV -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card project-card h-100 d-flex flex-column">
+              <div class="project-card-img">
+                <img
+                  src="assets/img/projects/bright-tv.webp"
+                  alt="Bright TV screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="project-icon-sm"><i class="bi bi-film"></i></div>
+                  <h5 class="fw-semibold mb-0">Bright TV</h5>
+                </div>
+                <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_6">
+                  A movie & TV show search app powered by TMDB and OMDB APIs
+                  with trending feeds, advanced search, personal library, and a
+                  clean dark-themed UI.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge skill-badge-sm">HTML5</span>
+                  <span class="badge skill-badge-sm">CSS3</span>
+                  <span class="badge skill-badge-sm">JavaScript</span>
+                  <span class="badge skill-badge-sm">TMDB API</span>
+                </div>
+                <a
+                  href="https://github.com/maasch/Bright-TV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-sm mt-auto"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  <span data-i18n="proj_view">View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Bright Quiz -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card project-card h-100 d-flex flex-column">
+              <div class="project-card-img">
+                <img
+                  src="assets/img/projects/bright-quiz.webp"
+                  alt="Bright Quiz screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <div class="project-icon-sm">
+                    <i class="bi bi-lightbulb"></i>
+                  </div>
+                  <h5 class="fw-semibold mb-0">Bright Quiz</h5>
+                </div>
+                <p class="text-muted-light flex-grow-1" data-i18n="proj_desc_7">
+                  An interactive quiz app covering web development topics with
+                  three difficulty levels, real-time scoring, glassmorphism UI,
+                  and randomized answers.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge skill-badge-sm">HTML5</span>
+                  <span class="badge skill-badge-sm">CSS3</span>
+                  <span class="badge skill-badge-sm">JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/maasch/Bright-quiz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-accent btn-sm mt-auto"
+                >
+                  <i class="bi bi-github me-1"></i>
+                  <span data-i18n="proj_view">View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ======================== CONTACT ======================== -->
     <section id="contact" class="section-padding section-alt">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h6 class="section-subtitle text-accent" data-i18n="contact_subtitle">Let's Connect</h6>
-                    <h2 class="section-title" data-i18n="contact_title">Contact Me</h2>
-                </div>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-5 col-md-6">
-                    <div class="glass-card p-4 h-100">
-                        <h5 class="fw-semibold mb-4" data-i18n="contact_info_title">Contact Info</h5>
-                        <div class="contact-item mb-3">
-                            <i class="bi bi-envelope-fill text-accent me-3"></i>
-                            <a href="mailto:adelmaach15@gmail.com" class="text-light text-decoration-none">adelmaach15@gmail.com</a>
-                        </div>
-                        <div class="contact-item mb-3">
-                            <i class="bi bi-github text-accent me-3"></i>
-                            <a href="https://github.com/maasch" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">github.com/maasch</a>
-                        </div>
-                        <div class="contact-item mb-3">
-                            <i class="bi bi-linkedin text-accent me-3"></i>
-                            <a href="https://www.linkedin.com/in/adel-maach/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">LinkedIn</a>
-                        </div>
-                        <div class="contact-item mb-3">
-                            <i class="bi bi-instagram text-accent me-3"></i>
-                            <a href="https://www.instagram.com/addyyyyyyyyyyyy_/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">Instagram</a>
-                        </div>
-                        <div class="contact-item mb-4">
-                            <i class="bi bi-twitter-x text-accent me-3"></i>
-                            <a href="https://x.com/adel_maach" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">X</a>
-                        </div>
-                        <hr class="border-secondary">
-                        <p class="text-muted-light small mt-3" data-i18n="contact_available">I'm currently available for freelance work and collaborations. Feel free to reach out!</p>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="glass-card p-4 h-100">
-                        <h5 class="fw-semibold mb-4" data-i18n="contact_form_title">Send a Message</h5>
-                        <form id="contactForm" action="https://formspree.io/f/mdawnrpw" method="POST" novalidate>
-                            <div class="mb-3">
-                                <label for="contactName" class="form-label" data-i18n="form_name">Name</label>
-                                <input type="text" class="form-control custom-input" id="contactName" name="name" required>
-                                <div class="invalid-feedback" data-i18n="form_name_error">Please enter your name.</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactEmail" class="form-label" data-i18n="form_email">Email</label>
-                                <input type="email" class="form-control custom-input" id="contactEmail" name="email" required>
-                                <div class="invalid-feedback" data-i18n="form_email_error">Please enter a valid email.</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactMessage" class="form-label">Message</label>
-                                <textarea class="form-control custom-input" id="contactMessage" name="message" rows="4" required></textarea>
-                                <div class="invalid-feedback" data-i18n="form_message_error">Please enter a message.</div>
-                            </div>
-                            <button type="submit" class="btn btn-accent w-100">
-                                <i class="bi bi-send me-2"></i><span data-i18n="form_submit">Send Message</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6
+              class="section-subtitle text-accent"
+              data-i18n="contact_subtitle"
+            >
+              Let's Connect
+            </h6>
+            <h2 class="section-title" data-i18n="contact_title">Contact Me</h2>
+          </div>
         </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-5 col-md-6">
+            <div class="glass-card p-4 h-100">
+              <h5 class="fw-semibold mb-4" data-i18n="contact_info_title">
+                Contact Info
+              </h5>
+              <div class="contact-item mb-3">
+                <i class="bi bi-envelope-fill text-accent me-3"></i>
+                <a
+                  href="mailto:adelmaach15@gmail.com"
+                  class="text-light text-decoration-none"
+                  >adelmaach15@gmail.com</a
+                >
+              </div>
+              <div class="contact-item mb-3">
+                <i class="bi bi-github text-accent me-3"></i>
+                <a
+                  href="https://github.com/maasch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light text-decoration-none"
+                  >github.com/maasch</a
+                >
+              </div>
+              <div class="contact-item mb-3">
+                <i class="bi bi-linkedin text-accent me-3"></i>
+                <a
+                  href="https://www.linkedin.com/in/adel-maach/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light text-decoration-none"
+                  >LinkedIn</a
+                >
+              </div>
+              <div class="contact-item mb-3">
+                <i class="bi bi-instagram text-accent me-3"></i>
+                <a
+                  href="https://www.instagram.com/addyyyyyyyyyyyy_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light text-decoration-none"
+                  >Instagram</a
+                >
+              </div>
+              <div class="contact-item mb-4">
+                <i class="bi bi-twitter-x text-accent me-3"></i>
+                <a
+                  href="https://x.com/adel_maach"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light text-decoration-none"
+                  >X</a
+                >
+              </div>
+              <hr class="border-secondary" />
+              <p
+                class="text-muted-light small mt-3"
+                data-i18n="contact_available"
+              >
+                I'm currently available for freelance work and collaborations.
+                Feel free to reach out!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <div class="glass-card p-4 h-100">
+              <h5 class="fw-semibold mb-4" data-i18n="contact_form_title">
+                Send a Message
+              </h5>
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/mdawnrpw"
+                method="POST"
+                novalidate
+              >
+                <div class="mb-3">
+                  <label
+                    for="contactName"
+                    class="form-label"
+                    data-i18n="form_name"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    id="contactName"
+                    name="name"
+                    required
+                  />
+                  <div class="invalid-feedback" data-i18n="form_name_error">
+                    Please enter your name.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="contactEmail"
+                    class="form-label"
+                    data-i18n="form_email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    id="contactEmail"
+                    name="email"
+                    required
+                  />
+                  <div class="invalid-feedback" data-i18n="form_email_error">
+                    Please enter a valid email.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">Message</label>
+                  <textarea
+                    class="form-control custom-input"
+                    id="contactMessage"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback" data-i18n="form_message_error">
+                    Please enter a message.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-accent w-100">
+                  <i class="bi bi-send me-2"></i
+                  ><span data-i18n="form_submit">Send Message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ======================== FOOTER ======================== -->
     <footer class="footer-section py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <p class="mb-0 text-muted-light small">&copy; 2025 Adel Maach. <span data-i18n="footer_rights">All rights reserved.</span></p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="social-links d-flex gap-3 justify-content-center justify-content-md-end">
-                        <a href="https://github.com/maasch" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/adel-maach/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.instagram.com/addyyyyyyyyyyyy_/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="https://x.com/adel_maach" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X"><i class="bi bi-twitter-x"></i></a>
-                        <a href="mailto:adelmaach15@gmail.com" class="social-link" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0 text-muted-light small">
+              &copy; 2025 Adel Maach.
+              <span data-i18n="footer_rights">All rights reserved.</span>
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div
+              class="social-links d-flex gap-3 justify-content-center justify-content-md-end"
+            >
+              <a
+                href="https://github.com/maasch"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/adel-maach/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/addyyyyyyyyyyyy_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://x.com/adel_maach"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="mailto:adelmaach15@gmail.com"
+                class="social-link"
+                aria-label="Email"
+                ><i class="bi bi-envelope-fill"></i
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle -->
@@ -607,87 +1029,113 @@
     <script src="assets/js/language-toggle.js"></script>
     <!-- Inline Scripts -->
     <script>
-        // Contact form with Formspree
-        (function () {
-            'use strict';
-            const form = document.getElementById('contactForm');
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
-                if (!form.checkValidity()) {
-                    event.stopPropagation();
-                    form.classList.add('was-validated');
-                    return;
-                }
-                const btn = form.querySelector('button[type="submit"]');
-                btn.disabled = true;
-                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
-                fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: { 'Accept': 'application/json' }
-                }).then(function (response) {
-                    if (response.ok) {
-                        form.classList.remove('was-validated');
-                        form.reset();
-                        btn.innerHTML = '<i class="bi bi-check-circle me-2"></i>' + (document.documentElement.lang === 'fr' ? 'Envoyé !' : 'Sent!');
-                        btn.classList.remove('btn-accent');
-                        btn.classList.add('btn-success');
-                        setTimeout(function () {
-                            btn.disabled = false;
-                            btn.classList.remove('btn-success');
-                            btn.classList.add('btn-accent');
-                            btn.innerHTML = '<i class="bi bi-send me-2"></i>' + (document.documentElement.lang === 'fr' ? 'Envoyer le Message' : 'Send Message');
-                        }, 3000);
-                    } else {
-                        throw new Error('Form submission failed');
-                    }
-                }).catch(function () {
-                    btn.disabled = false;
-                    btn.innerHTML = '<i class="bi bi-send me-2"></i>' + (document.documentElement.lang === 'fr' ? 'Envoyer le Message' : 'Send Message');
-                    alert(document.documentElement.lang === 'fr' ? 'Erreur lors de l\'envoi. Veuillez réessayer.' : 'Error sending message. Please try again.');
-                });
-            });
-        })();
-
-        // Navbar background on scroll + mobile menu open
-        const navEl = document.getElementById('mainNav');
-        const navCollapse = document.getElementById('navbarNav');
-        function updateNavBg() {
-            if (window.scrollY > 50 || navCollapse.classList.contains('show')) {
-                navEl.classList.add('navbar-scrolled');
-            } else {
-                navEl.classList.remove('navbar-scrolled');
-            }
-        }
-        window.addEventListener('scroll', updateNavBg);
-        navCollapse.addEventListener('show.bs.collapse', function () { navEl.classList.add('navbar-scrolled'); });
-        navCollapse.addEventListener('hidden.bs.collapse', updateNavBg);
-
-        // Close mobile nav on link click
-        document.querySelectorAll('.nav-link').forEach(function (link) {
-            link.addEventListener('click', function () {
-                const navCollapse = document.getElementById('navbarNav');
-                if (navCollapse.classList.contains('show')) {
-                    new bootstrap.Collapse(navCollapse).hide();
-                }
+      // Contact form with Formspree
+      (function () {
+        'use strict';
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          if (!form.checkValidity()) {
+            event.stopPropagation();
+            form.classList.add('was-validated');
+            return;
+          }
+          const btn = form.querySelector('button[type="submit"]');
+          btn.disabled = true;
+          btn.innerHTML =
+            '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' },
+          })
+            .then(function (response) {
+              if (response.ok) {
+                form.classList.remove('was-validated');
+                form.reset();
+                btn.innerHTML =
+                  '<i class="bi bi-check-circle me-2"></i>' +
+                  (document.documentElement.lang === 'fr'
+                    ? 'Envoyé !'
+                    : 'Sent!');
+                btn.classList.remove('btn-accent');
+                btn.classList.add('btn-success');
+                setTimeout(function () {
+                  btn.disabled = false;
+                  btn.classList.remove('btn-success');
+                  btn.classList.add('btn-accent');
+                  btn.innerHTML =
+                    '<i class="bi bi-send me-2"></i>' +
+                    (document.documentElement.lang === 'fr'
+                      ? 'Envoyer le Message'
+                      : 'Send Message');
+                }, 3000);
+              } else {
+                throw new Error('Form submission failed');
+              }
+            })
+            .catch(function () {
+              btn.disabled = false;
+              btn.innerHTML =
+                '<i class="bi bi-send me-2"></i>' +
+                (document.documentElement.lang === 'fr'
+                  ? 'Envoyer le Message'
+                  : 'Send Message');
+              alert(
+                document.documentElement.lang === 'fr'
+                  ? "Erreur lors de l'envoi. Veuillez réessayer."
+                  : 'Error sending message. Please try again.'
+              );
             });
         });
+      })();
 
-        // Scroll reveal animation
-        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
+      // Navbar background on scroll + mobile menu open
+      const navEl = document.getElementById('mainNav');
+      const navCollapse = document.getElementById('navbarNav');
+      function updateNavBg() {
+        if (window.scrollY > 50 || navCollapse.classList.contains('show')) {
+          navEl.classList.add('navbar-scrolled');
+        } else {
+          navEl.classList.remove('navbar-scrolled');
+        }
+      }
+      window.addEventListener('scroll', updateNavBg);
+      navCollapse.addEventListener('show.bs.collapse', function () {
+        navEl.classList.add('navbar-scrolled');
+      });
+      navCollapse.addEventListener('hidden.bs.collapse', updateNavBg);
 
-        document.querySelectorAll('.glass-card, .section-title, .section-subtitle').forEach(function (el) {
-            el.classList.add('reveal-on-scroll');
-            observer.observe(el);
+      // Close mobile nav on link click
+      document.querySelectorAll('.nav-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          const navCollapse = document.getElementById('navbarNav');
+          if (navCollapse.classList.contains('show')) {
+            new bootstrap.Collapse(navCollapse).hide();
+          }
+        });
+      });
+
+      // Scroll reveal animation
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      };
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll('.glass-card, .section-title, .section-subtitle')
+        .forEach(function (el) {
+          el.classList.add('reveal-on-scroll');
+          observer.observe(el);
         });
     </script>
-</body>
+  </body>
 </html>
