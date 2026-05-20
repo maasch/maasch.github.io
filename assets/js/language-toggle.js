@@ -206,6 +206,21 @@ const translations = {
     }
 };
 
+// CV file paths per language
+const cvPaths = {
+    en: 'assets/cv/Adel_Maach_EN_CV.pdf',
+    fr: 'assets/cv/Adel_Maach_FR_CV.pdf'
+};
+
+// Update the CV download link href & download attribute
+function updateCvLink(lang) {
+    const cvLink = document.getElementById('cvDownloadLink');
+    if (cvLink && cvPaths[lang]) {
+        cvLink.setAttribute('href', cvPaths[lang]);
+        cvLink.setAttribute('download', cvPaths[lang].split('/').pop());
+    }
+}
+
 // Current language state
 let currentLang = localStorage.getItem('portfolio-lang') || 'en';
 
@@ -220,6 +235,9 @@ function applyTranslations(lang) {
     });
     // Update html lang attribute
     document.documentElement.lang = lang;
+
+    // Update CV download link to match selected language
+    updateCvLink(lang);
 }
 
 // Toggle between EN and FR
@@ -244,4 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (toggleBtn) {
         toggleBtn.innerHTML = '<i class="bi bi-translate me-1"></i> ' + (currentLang === 'en' ? 'FR' : 'EN');
     }
+
+    // Set initial CV download link
+    updateCvLink(currentLang);
 });
